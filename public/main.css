@@ -1,0 +1,72 @@
+body {
+  font-family: 'Exo 2', sans-serif;
+  padding: 0;
+  margin: 0;
+}
+label {
+  display: block;
+}
+header {
+  color: #FFF;
+  background: #272822;
+  padding: 20px;
+}
+.animate-show {
+  -webkit-animation: fadeIn 1s;
+  -moz-animation: fadeIn 1s;
+  animation: fadeIn 1s;
+}
+.error-message {
+  font-size: 0.8em;
+  color: #de5b3c;
+}
+.form {
+  width: 450px;
+  margin: 0 auto;
+  line-height: 1.4em;
+}
+.form .form-field {
+  margin-bottom: 20px;
+}
+.form label {
+  display: block;
+  margin-bottom: 5px;
+}
+.form input {
+  width: 100%;
+  font-family: inherit;
+  font-size: inherit;
+  color: #555;
+  border: 1px solid #CCC;
+  box-shadow: 0 4px 2px -3px rgba(0, 0, 0, 0.1);
+  padding: 10px;
+  margin: 0 0 5px 0;
+}
+.form input:focus {
+  outline: none;
+  border: 1px solid #89D8FA;
+}
+.form input.ng-invalid,
+.form input.ng-invalid:focus {
+  color: #de5b3c;
+  border: 1px solid #de5b3c;
+}
+.form button {
+  font-family: inherit;
+  font-size: inherit;
+  background: #de5b3c;
+  border: 1px solid #c64121;
+  border-bottom: 4px solid #c64121;
+  color: #FFF;
+  padding: 14px 25px;
+  border-radius: 3px;
+  cursor: pointer;
+}
+.form button:focus,
+.form button:active {
+  outline: none;
+  border-bottom: 4px solid #c64121;
+}
+.form button:hover {
+  background: #e26d52;
+}

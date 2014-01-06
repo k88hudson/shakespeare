@@ -1,0 +1,26 @@
+<div>
+  <form class="form" name="register_form" ng-submit="submit()" novalidate>
+    <h3>New User</h3>
+
+    <div class="form-field" ng-controller="personaController">
+      <button ng-click="login()">Login</button>
+      <button ng-click="logout()">Logout</button>
+    </div>
+
+    <div class="form-field">
+      <label>Email</label>
+      <input type="email" name="email" ng-model="user.email">
+      <div class="error-message animate-show" ng-show="register_form.email.$invalid">
+        Please provide a valid email.
+      </div>
+    </div>
+
+    <div class="form-field">
+      <label>Title</label>
+      <input name="title" ng-model="user.title">
+    </div>
+
+    <button>Submit</button>
+
+  </form>
+</div>

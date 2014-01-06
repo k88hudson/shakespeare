@@ -1,0 +1,21 @@
+<html ng-app="shakespeare">
+  <head>
+    <meta http-equiv="X-UA-Compatible" content="IE=Edge"> 
+    <link href='http://fonts.googleapis.com/css?family=Exo+2:400,400italic,700,700italic' rel='stylesheet' type='text/css'>
+    <link rel="stylesheet" type="text/css" href="/bower_components/animate.css/animate.css">
+    <link rel="stylesheet" type="text/css" href="/main.css">
+    <script src="http://login.persona.org/include.js"></script>
+    <script src="/bower_components/angular/angular.js"></script>
+    <script src="/bower_components/angular-route/angular-route.js"></script>
+    <script src="/bower_components/angular-animate/angular-animate.js"></script>
+    <script src="/app.js"></script>
+  </head>
+  <body ng-controller="mainController" novalidate>
+    <header>
+      {{message}}
+    </header>
+    <div id="main">
+      <div ng-view></div>
+    </div>
+  </body>
+</html>

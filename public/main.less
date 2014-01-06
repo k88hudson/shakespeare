@@ -1,0 +1,86 @@
+@red: #DE5B3C;
+
+body {
+  font-family: 'Exo 2', sans-serif;
+  padding: 0;
+  margin: 0;
+}
+
+label {
+  display: block;
+}
+
+header {
+  color: #FFF;
+  background: #272822;
+  padding: 20px;
+}
+
+.animate-show {
+  -webkit-animation: fadeIn 1s;
+  -moz-animation: fadeIn 1s;
+  animation: fadeIn 1s;
+}
+
+
+.error-message {
+  font-size: 0.8em;
+  color: @red;
+}
+
+.form {
+  width: 450px;
+  margin: 0 auto;
+  line-height: 1.4em;
+
+  .form-field {
+    margin-bottom: 20px;
+  }
+
+  label {
+    display: block;
+    margin-bottom: 5px;
+  }
+
+  input {
+    width: 100%;
+    font-family: inherit;
+    font-size: inherit;
+    color: #555;
+    border: 1px solid #CCC;
+    box-shadow: 0 4px 2px -3px fade(black, 10%);
+    padding: 10px;
+    margin: 0 0 5px 0;
+
+    &:focus {
+      outline: none;
+      border: 1px solid #89D8FA;
+    }
+  }
+
+  input.ng-invalid,
+  input.ng-invalid:focus {
+    color: @red;
+    border: 1px solid @red;
+  }
+
+  button {
+    font-family: inherit;
+    font-size: inherit;
+    background: @red;
+    border: 1px solid darken(@red, 10%);
+    border-bottom: 4px solid darken(@red, 10%);
+    color: #FFF;
+    padding: 14px 25px;
+    border-radius: 3px;
+    cursor: pointer;
+    &:focus,
+    &:active {
+      outline: none;
+      border-bottom: 4px solid darken(@red, 10%);
+    }
+    &:hover {
+      background: lighten(@red, 5%);
+    }
+  }
+}
